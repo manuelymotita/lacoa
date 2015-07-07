@@ -180,6 +180,8 @@ a{
 	height: 50vh;
 	min-width: 1000px; 
 	width:70vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 #container1{
 	padding:40px;
