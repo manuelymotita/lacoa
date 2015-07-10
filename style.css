@@ -349,3 +349,22 @@ a{
 	width: 100%;
 	height: auto;
 }
+.hidden{
+	display: none;
+}
+.button{
+	font-size: 14px;
+	padding: 5px;
+	color:#fff;
+	background-color: #00b7ff;
+	border-radius: 10px 40px 20px;
+	border-width: 0px;
+	float: left;
+	-webkit-transition: .7s ; /* Safari 3.1 to 6.0 */
+    transition: .7s ;
+    -o-transition: .7s;
+}
+.button:hover{
+	background-color: red;
+	border-radius: 50px;
+}

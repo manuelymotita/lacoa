@@ -7,10 +7,23 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="animate.css">
 		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</head>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script>
 		 new WOW().init();
+
+		 $(document).ready(function(){
+    		$("#button1").click(function(){
+        	$("#productContainer").toggleClass("hidden");
+   			 });
+    		$("#button2").click(function(){
+        	$("#productContainer1").toggleClass("hidden");
+   			 });
+    		$("#button3").click(function(){
+        	$("#productContainer2").toggleClass("hidden");
+   			 });
+			});
 	</script>
 	<script src="lightbox/js/jquery-1.11.0.min.js"></script>
 	<script src="lightbox/js/lightbox.min.js"></script>
@@ -31,8 +44,10 @@
 			<div id="productSection">
 				<p id="productTitle">Embossings & Constructions</p>
 				<p id="productDescription" class="set">Set 1</p>
+				<button id="button1" class="button">expand</button>
 				<br id="clear"/>
-				<div id="productContainer">
+				<br/>
+				<div id="productContainer" class="hidden">
 						<div id="cards">
 							<div class="imgBox">
 								<a href="images/set1/alligatorSW-(c).jpg" data-lightbox="Embossings & Constructions" data-title="Alligator">
@@ -309,281 +324,495 @@
 				</div><!--END of #productContainer -->
 				<br/>
 				<p id="productDescription" class="set">Set 2</p>
+				<button id="button2" class="button">expand</button>
 				<br id="clear"/>
-				<div id="productContainer">
+				<br/>
+				<div id="productContainer1" class="hidden">
 						<div id="cards">
 							<div class="imgBox">
-								<a href="images/set1/alligatorSW-(c).jpg" data-lightbox="Embossings & Constructions" data-title="Alligator">
-								<img src="images/set1/alligatorSW-(c).jpg" atl="Alligator" class="cardsImg"/></a>
+								<a href="images/set2/africanlizard.jpg" data-lightbox="Embossings & Constructions" data-title="Africanlizard">
+								<img src="images/set2/africanlizard.jpg" atl="Africanlizard" class="cardsImg"/></a>
 							</div><!-- END of .imgBox -->
-							<p id="cardDes">Alligator</p>
+							<p id="cardDes">Africanlizard</p>
 						</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/alligatorSW.jpg" data-lightbox="Embossings & Constructions" data-title="Alligator">
-								<img src="images/set1/alligatorSW.jpg" atl="Alligator" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Alligator</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/aztec-floral.jpg" data-lightbox="Embossings & Constructions" data-title="Aztec-Floral">
-								<img src="images/set1/aztec-floral.jpg" atl="Aztec-Floral" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Aztec-Floral</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/bark.jpg" data-lightbox="Embossings & Constructions" data-title="Bark">
-								<img src="images/set1/bark.jpg" atl="Bark" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Bark</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/big-damask.jpg" data-lightbox="Embossings & Constructions" data-title="Big-Damask">
-								<img src="images/set1/big-damask.jpg" atl="Big-Damask" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Big-Damask</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/bumps.jpg" data-lightbox="Embossings & Constructions" data-title="Bumps">
-								<img src="images/set1/bumps.jpg" atl="Bumps" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Bumps</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/cane.jpg" data-lightbox="Embossings & Constructions" data-title="Cane">
-								<img src="images/set1/cane.jpg" atl="Cane" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Cane</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/cobble.jpg" data-lightbox="Embossings & Constructions" data-title="Cobble">
-								<img src="images/set1/cobble.jpg" atl="Cobble" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Cobble</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/crush-stripe.jpg" data-lightbox="Embossings & Constructions" data-title="Crush-Stripe">
-								<img src="images/set1/crush-stripe.jpg" atl="Crush-stripe" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Crush-Stripe</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/daisy-floral.jpg" data-lightbox="Embossings & Constructions" data-title="Daisy-Floral">
-								<img src="images/set1/daisy-floral.jpg" atl="Daisy-Floral" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Daisy-Floral</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/dots.jpg" data-lightbox="Embossings & Constructions" data-title="Dots">
-								<img src="images/set1/dots.jpg" atl="Dots" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Dots</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/fandango.jpg" data-lightbox="Embossings & Constructions" data-title="Fandango">
-								<img src="images/set1/fandango.jpg" atl="Fandango" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Fandango</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/feather.jpg" data-lightbox="Embossings & Constructions" data-title="Feather">
-								<img src="images/set1/feather.jpg" atl="feather" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Feather</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/floral-bouquet.jpg" data-lightbox="Embossings & Constructions" data-title="Floral-Bouquet">
-								<img src="images/set1/floral-bouquet.jpg" atl="Floral-Bouquet" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Floral-Bouquet</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/floral-western.jpg" data-lightbox="Embossings & Constructions" data-title="Floral-Western">
-								<img src="images/set1/floral-western.jpg" atl="Floral-Western" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Floral-Western</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/flute.jpg" data-lightbox="Embossings & Constructions" data-title="Flute">
-								<img src="images/set1/flute.jpg" atl="Flute" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Flute</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/grass-close.jpg" data-lightbox="Embossings & Constructions" data-title="Grass-Close">
-								<img src="images/set1/grass-close.jpg" atl="Grass-Close" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Grass-Close</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/ICC79218.jpg" data-lightbox="Embossings & Constructions" data-title="ICC79218">
-								<img src="images/set1/ICC79218.jpg" atl="ICC79218" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">ICC79218</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/interweave.jpg" data-lightbox="Embossings & Constructions" data-title="Interweave">
-								<img src="images/set1/interweave.jpg" atl="Interweave" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Interweave</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/leather.jpg" data-lightbox="Embossings & Constructions" data-title="Leather">
-								<img src="images/set1/leather.jpg" atl="Leather" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Leather</p>
-					</div><!--END of #cards-->
-					<div id="cards">
+						<div id="cards">
 							<div class="imgBox">
-								<a href="images/set1/light-kid.jpg" data-lightbox="Embossings & Constructions" data-title="Light-Kid">
-								<img src="images/set1/light-kid.jpg" atl="Light-Kid" class="cardsImg"/></a>
+								<a href="images/set2/alumesh.jpg" data-lightbox="Embossings & Constructions" data-title="Alumesh">
+								<img src="images/set2/alumesh.jpg" atl="Alumesh" class="cardsImg"/></a>
 							</div><!-- END of .imgBox -->
-							<p id="cardDes">Light-Kid</p>
+							<p id="cardDes">Alumesh</p>
 						</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/lizgatorSW(l).jpg" data-lightbox="Embossings & Constructions" data-title="LizardgatorSW(1)">
-								<img src="images/set1/lizgatorSW(l).jpg" atl="LizgatorSW(l)" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">LizgatorSW(l)</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/milano.jpg" data-lightbox="Embossings & Constructions" data-title="Milano">
-								<img src="images/set1/milano.jpg" atl="Milano" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Milano</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/nugget.jpg" data-lightbox="Embossings & Constructions" data-title="Nugget">
-								<img src="images/set1/nugget.jpg" atl="Nugget" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Nugget</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/ostrich.jpg" data-lightbox="Embossings & Constructions" data-title="Ostrich">
-								<img src="images/set1/ostrich.jpg" atl="Ostrich" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Ostrich</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/pebble.jpg" data-lightbox="Embossings & Constructions" data-title="Pebble">
-								<img src="images/set1/pebble.jpg" atl="Pebble" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Pebble</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/pinwheel.jpg" data-lightbox="Embossings & Constructions" data-title="Pinwheel">
-								<img src="images/set1/pinwheel.jpg" atl="Pinwheel" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Pinwheel</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/puff-mosaic.jpg" data-lightbox="Embossings & Constructions" data-title="Puff-Mosaic">
-								<img src="images/set1/puff-mosaic.jpg" atl="Puff-Mosaic" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Puff-Mosaic</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/regal.jpg" data-lightbox="Embossings & Constructions" data-title="Regal">
-								<img src="images/set1/regal.jpg" atl="Regal" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Regal</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/rips.jpg" data-lightbox="Embossings & Constructions" data-title="Rips">
-								<img src="images/set1/rips.jpg" atl="Rips" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Rips</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/sandstone.jpg" data-lightbox="Embossings & Constructions" data-title="Sandstone">
-								<img src="images/set1/sandstone.jpg" atl="Sandstone" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Sandstone</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/seaton.jpg" data-lightbox="Embossings & Constructions" data-title="Seaton">
-								<img src="images/set1/seaton.jpg" atl="Seaton" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Seaton</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/sierra.jpg" data-lightbox="Embossings & Constructions" data-title="Sierra">
-								<img src="images/set1/sierra.jpg" atl="Sierra" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Sierra</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/taffeta.jpg" data-lightbox="Embossings & Constructions" data-title="Taffeta">
-								<img src="images/set1/taffeta.jpg" atl="Taffeta" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Taffeta</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/trax.jpg" data-lightbox="Embossings & Constructions" data-title="Trax">
-								<img src="images/set1/trax.jpg" atl="Trax" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Trax</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/vertical-alligator.jpg" data-lightbox="Embossings & Constructions" data-title="Vertical-Alligator">
-								<img src="images/set1/vertical-alligator.jpg" atl="Vertical-Alligator" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Vertical-Alligator</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/western.jpg" data-lightbox="Embossings & Constructions" data-title="Western">
-								<img src="images/set1/western.jpg" atl="Western" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Western</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/wolf.jpg" data-lightbox="Embossings & Constructions" data-title="Wolf">
-								<img src="images/set1/wolf.jpg" atl="Wolf" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Wolf</p>
-					</div><!--END of #cards-->
-					<div id="cards">
-						<div class="imgBox">
-							<a href="images/set1/yucca.jpg" data-lightbox="Embossings & Constructions" data-title="Yucca">
-								<img src="images/set1/yucca.jpg" atl="Yucca" class="cardsImg"/></a>
-						</div><!-- END of .imgBox -->
-						<p id="cardDes">Yucca</p>
-					</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/basket-weave.jpg" data-lightbox="Embossings & Constructions" data-title="Basket-Weave">
+								<img src="images/set2/basket-weave.jpg" atl="Basket-Weave" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Basket-Weave</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/big-moire.jpg" data-lightbox="Embossings & Constructions" data-title="Big-Moire">
+								<img src="images/set2/big-moire.jpg" atl="big-moire" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Big-Moire</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/burlap.jpg" data-lightbox="Embossings & Constructions" data-title="Burlap">
+								<img src="images/set2/burlap.jpg" atl="burlap" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Burlap</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/burnish.jpg" data-lightbox="Embossings & Constructions" data-title="Burnish">
+								<img src="images/set2/burnish.jpg" atl="burnish" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Burnish</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/cairo-cotton.jpg" data-lightbox="Embossings & Constructions" data-title="Cairo-Cotton">
+								<img src="images/set2/cairo-cotton.jpg" atl="cairo-cotton" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Cairo-Cotton</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/deep-suede.jpg" data-lightbox="Embossings & Constructions" data-title="Deep-Suede">
+								<img src="images/set2/deep-suede.jpg" atl="deep-suede" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Deep-Suede</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/dice.jpg" data-lightbox="Embossings & Constructions" data-title="Dice">
+								<img src="images/set2/dice.jpg" atl="dice" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Dice</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/dunmore.jpg" data-lightbox="Embossings & Constructions" data-title="Dunmore">
+								<img src="images/set2/dunmore.jpg" atl="dunmore" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Dunmore</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/flat-alligator.jpg" data-lightbox="Embossings & Constructions" data-title="Flat-Alligator">
+								<img src="images/set2/flat-alligator.jpg" atl="flat-alligator" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Flat-Alligator</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/floral.jpg" data-lightbox="Embossings & Constructions" data-title="Floral">
+								<img src="images/set2/floral.jpg" atl="floral" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Floral</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/ganges.jpg" data-lightbox="Embossings & Constructions" data-title="Ganges">
+								<img src="images/set2/ganges.jpg" atl="ganges" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Ganges</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/grossgrain.jpg" data-lightbox="Embossings & Constructions" data-title="Grossgrain">
+								<img src="images/set2/grossgrain.jpg" atl="grossgrain" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Grossgrain</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/jaguar.jpg" data-lightbox="Embossings & Constructions" data-title="Jaguar">
+								<img src="images/set2/jaguar.jpg" atl="jaguar" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Jaguar</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/jupiter.jpg" data-lightbox="Embossings & Constructions" data-title="Jupiter">
+								<img src="images/set2/jupiter.jpg" atl="jupiter" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes"><Jupiter/p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/kid3.jpg" data-lightbox="Embossings & Constructions" data-title="Kid #3">
+								<img src="images/set2/kid3.jpg" atl="kid #3" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Kid #3</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/linen.jpg" data-lightbox="Embossings & Constructions" data-title="Linen">
+								<img src="images/set2/linen.jpg" atl="linen" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Linen</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/maui.jpg" data-lightbox="Embossings & Constructions" data-title="Maui">
+								<img src="images/set2/maui.jpg" atl="maui" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Maui</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/morroco.jpg" data-lightbox="Embossings & Constructions" data-title="Morroco">
+								<img src="images/set2/morroco.jpg" atl="morroco" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Morroco</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/nakay.jpg" data-lightbox="Embossings & Constructions" data-title="Nankay">
+								<img src="images/set2/nankay.jpg" atl="nankay" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Nankay</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/new-nugget.jpg" data-lightbox="Embossings & Constructions" data-title="New-Nugget">
+								<img src="images/set2/new-nugget.jpg" atl="new-nugget" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">New-Nugget</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/palomar.jpg" data-lightbox="Embossings & Constructions" data-title="Palomar">
+								<img src="images/set2/palomar.jpg" atl="palomar" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Palomar</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/pig.jpg" data-lightbox="Embossings & Constructions" data-title="Pig">
+								<img src="images/set2/pig.jpg" atl="pig" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Pig</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/sand-painting.jpg" data-lightbox="Embossings & Constructions" data-title="Sand-Painting">
+								<img src="images/set2/sand-painting.jpg" atl="sand-painting" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sand-Painting</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/scandia.jpg" data-lightbox="Embossings & Constructions" data-title="Scandia">
+								<img src="images/set2/scandia.jpg" atl="scandia" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Scandia</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/sertex-damask.jpg" data-lightbox="Embossings & Constructions" data-title="Sertex-Damask">
+								<img src="images/set2/sertex-damask.jpg" atl="sertex-damask" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sertex-Damask</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/shiny-crush.jpg" data-lightbox="Embossings & Constructions" data-title="Shiny-Crush">
+								<img src="images/set2/shiny-crush.jpg" atl="shiny-crush" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Shiny-Crush</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/silly-billy.jpg" data-lightbox="Embossings & Constructions" data-title="Silly-Billy">
+								<img src="images/set2/silly-billy.jpg" atl="silly-billy" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Silly-Billy</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/small-lizgator.jpg" data-lightbox="Embossings & Constructions" data-title="Small-Lizgator">
+								<img src="images/set2/small-lizgator.jpg" atl="small-lizgator" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Small-Lizgator</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/sparkle.jpg" data-lightbox="Embossings & Constructions" data-title="Sparkle">
+								<img src="images/set2/sparkle.jpg" atl="sparkle" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sparkle</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/swirl.jpg" data-lightbox="Embossings & Constructions" data-title="Swirl">
+								<img src="images/set2/swirl.jpg" atl="swirl" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Swirl</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/thin-yard.jpg" data-lightbox="Embossings & Constructions" data-title="Thin-Yard">
+								<img src="images/set2/thin-yard.jpg" atl="thin-yard" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Thin-Yard</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/twine.jpg" data-lightbox="Embossings & Constructions" data-title="Twine">
+								<img src="images/set2/twine.jpg" atl="twine" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Twine</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/vb.jpg" data-lightbox="Embossings & Constructions" data-title="VB">
+								<img src="images/set2/vb.jpg" atl="vb" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">VB</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set2/wide-whale.jpg" data-lightbox="Embossings & Constructions" data-title="Wide-Whale">
+								<img src="images/set2/wide-whale.jpg" atl="wide-whale" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Wide-Whale</p>
+						</div><!--END of #cards-->
+					</div><!--END of #productContainer -->
+				<br/>
+				<p id="productDescription" class="set">Set 3</p>
+				<button id="button3" class="button">expand</button>
+				<br id="clear"/>
+				<br/>
+				<div id="productContainer2" class="hidden">
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/aztec.jpg" data-lightbox="Embossings & Constructions" data-title="Aztec">
+								<img src="images/set3/aztec.jpg" atl="aztec" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Aztec</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/bison.jpg" data-lightbox="Embossings & Constructions" data-title="Bison">
+								<img src="images/set3/bison.jpg" atl="bison" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Bison</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/brush-silk.jpg" data-lightbox="Embossings & Constructions" data-title="Brush-Silk">
+								<img src="images/set3/brush-silk.jpg" atl="brush-silk" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Brush-Silk</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/checker-board.jpg" data-lightbox="Embossings & Constructions" data-title="Checker-Board">
+								<img src="images/set3/checker-board.jpg" atl="checker-board" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Checker-Board</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/cobra.jpg" data-lightbox="Embossings & Constructions" data-title="Cobra">
+								<img src="images/set3/cobra.jpg" atl="cobra" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Cobra</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/deepsuede.jpg" data-lightbox="Embossings & Constructions" data-title="Deepsuede">
+								<img src="images/set3/deepsuede.jpg" atl="deepsuede" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">deepsuede</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/diamond.jpg" data-lightbox="Embossings & Constructions" data-title="Diamond">
+								<img src="images/set3/diamond.jpg" atl="diamond" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Diamond</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/haircell.jpg" data-lightbox="Embossings & Constructions" data-title="Haircell">
+								<img src="images/set3/haircell.jpg" atl="haircell" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Haircell</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/krinkles.jpg" data-lightbox="Embossings & Constructions" data-title="Krinkles">
+								<img src="images/set3/krinkles.jpg" atl="krinkles" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Krinkles</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/levant.jpg" data-lightbox="Embossings & Constructions" data-title="Levant">
+								<img src="images/set3/levant.jpg" atl="levant" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Levant</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/lightsuede.jpg" data-lightbox="Embossings & Constructions" data-title="Lightsuede">
+								<img src="images/set3/lightsuede.jpg" atl="lightsuede" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Lightsuede</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/matte.jpg" data-lightbox="Embossings & Constructions" data-title="Matte">
+								<img src="images/set3/matte.jpg" atl="matte" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Matte</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/mesh.jpg" data-lightbox="Embossings & Constructions" data-title="Mesh">
+								<img src="images/set3/mesh.jpg" atl="mesh" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Mesh</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/mirage.jpg" data-lightbox="Embossings & Constructions" data-title="Mirage">
+								<img src="images/set3/mirage.jpg" atl="mirage" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Mirage</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/moire-stripe.jpg" data-lightbox="Embossings & Constructions" data-title="Moire-Stripe">
+								<img src="images/set3/moire-stripe.jpg" atl="moire-stripe" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Moire-Stripe</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/oldheather.jpg" data-lightbox="Embossings & Constructions" data-title="Oldheather">
+								<img src="images/set3/oldheather.jpg" atl="oldheather" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Oldheather</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/patent.jpg" data-lightbox="Embossings & Constructions" data-title="Patent">
+								<img src="images/set3/patent.jpg" atl="patent" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Patent</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/puffdiamond.jpg" data-lightbox="Embossings & Constructions" data-title="Puffdiamond">
+								<img src="images/set3/puffdiamond.jpg" atl="puffdiamond" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Puffdiamond</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/regalia.jpg" data-lightbox="Embossings & Constructions" data-title="Regalia">
+								<img src="images/set3/regalia.jpg" atl="regalia" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Regalia</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/reverse-diamond.jpg" data-lightbox="Embossings & Constructions" data-title="Reverse-Diamond">
+								<img src="images/set3/reverse-diamond.jpg" atl="reverse-diamond" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Reverse-Diamond</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/rope.jpg" data-lightbox="Embossings & Constructions" data-title="Rope">
+								<img src="images/set3/rope.jpg" atl="rope" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Rope</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/sequins.jpg" data-lightbox="Embossings & Constructions" data-title="Sequins">
+								<img src="images/set3/sequins.jpg" atl="sequins" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sequins</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/small-moire.jpg" data-lightbox="Embossings & Constructions" data-title="Small-Moire">
+								<img src="images/set3/small-moire.jpg" atl="small-moire" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Small-Moire</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/sparkle.jpg" data-lightbox="Embossings & Constructions" data-title="Sparkle">
+								<img src="images/set3/sparkle.jpg" atl="sparkle" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sparkle</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/starlite-tylone.jpg" data-lightbox="Embossings & Constructions" data-title="Starlite-Tylone">
+								<img src="images/set3/starlite-tylone.jpg" atl="starlite-tylone" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Starlite-Tylone</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/starlite.jpg" data-lightbox="Embossings & Constructions" data-title="Starlite">
+								<img src="images/set3/starlite.jpg" atl="starlite" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Starlite</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/sterling.jpg" data-lightbox="Embossings & Constructions" data-title="Sterling">
+								<img src="images/set3/sterling.jpg" atl="sterling" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sterling</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/sunburst.jpg" data-lightbox="Embossings & Constructions" data-title="Sunburst">
+								<img src="images/set3/sunburst.jpg" atl="sunburst" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Sunburst</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/tapestry.jpg" data-lightbox="Embossings & Constructions" data-title="Tapestry">
+								<img src="images/set3/tapestry.jpg" atl="tapestry" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Tapestry</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/tile.jpg" data-lightbox="Embossings & Constructions" data-title="Tile">
+								<img src="images/set3/tile.jpg" atl="tile" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Tile</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/unigator.jpg" data-lightbox="Embossings & Constructions" data-title="Unigator">
+								<img src="images/set3/unigator.jpg" atl="unigator" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Unigator</p>
+						</div><!--END of #cards-->
+						<div id="cards">
+							<div class="imgBox">
+								<a href="images/set3/woodblank.jpg" data-lightbox="Embossings & Constructions" data-title="Woodblank">
+								<img src="images/set3/woodblank.jpg" atl="woodblank" class="cardsImg"/></a>
+							</div><!-- END of .imgBox -->
+							<p id="cardDes">Woodblank</p>
+						</div><!--END of #cards-->
+					</div><!--END of #productContainer -->
+				<br/>
 				</div><!--END of #productContainer -->
 			</div><!--END of #productSection -->
 		</div> <!--END of #content-->
