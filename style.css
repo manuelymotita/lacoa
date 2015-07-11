@@ -15,6 +15,16 @@ a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
+.left{
+	text-align: left;
+}
+.floatLeft{
+	float: left;
+}
+.pad{
+	padding-top: 10px;
+	padding-left: 10px;
+}
 #clear {
 	clear:both;
 }
@@ -368,4 +378,62 @@ a{
 .button:hover{
 	background-color: red;
 	border-radius: 50px;
+}
+#contact{
+	text-align: center;
+	margin-top: 70px;
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#email{
+	position: relative;
+	width:200px;
+	background-color: #f9f9f9;
+	margin-left: 25px;
+	height:200px;
+	-webkit-transition: .7s ; /* Safari 3.1 to 6.0 */
+    transition: .7s ;
+    -o-transition: .7s;
+	border-radius: 10px 50px 20px;
+	box-shadow: 2px 3px 10px -2px #cccccc;
+	vertical-align: center;
+	box-sizing:border-box;
+}
+#email:hover{
+	position:relative;
+	bottom: 20px;
+	background-color:#ffffff;
+}
+.emailTitle{
+	color: #fff;
+	font-weight: 700;
+	background-color: #00b7ff;
+	padding: 15px;
+	margin: 0px;
+}
+.blue{
+	color:#00b7ff;
+}
+#also{
+	margin-top: 40px;
+	width: 600px;
+	background-color: #00b7ff;
+	height: 200px;
+	border-radius: 10px 50px 20px;
+	box-shadow: 2px 3px 10px -2px #cccccc;
+	-webkit-transition: 1s; /* Safari 3.1 to 6.0 */
+    transition: 1s;
+     -o-transition: .7s;
+}
+#also:hover{
+	color: #ffffff;
+	background-color: #ff0000;
+	text-decoration: none;
+	border-radius: 50px;
+}
+.find{
+	padding: 40px;
+	font-size: 20px;
+	font-weight: 500;
 }
